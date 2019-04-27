@@ -8,8 +8,8 @@
 
 
 [] - tell user options: 'a' - add, 's' - show, 'f' - find, 'q' - quit program
-[] - what format is a movie ~~~~~list of dicts
-[] - decide where to store movies
+[x] - what format is a movie ~~~~~list of dicts
+[x] - decide where to store movies
 
 - Functions -
 [] - create add_movie
@@ -37,3 +37,7 @@ def menu():
 
 
 def add_movie():
+    title = input("\nTitle of movie you want to add: ")
+    director = input("\nDirector of the movie: ")
+    release_year = input("\nYear of release: ")
+    movie = dict('Title'=title, 'Director'=director, 'Release Year'=release_year)
