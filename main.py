@@ -21,6 +21,7 @@
 movies = []
 
 
+
 def menu():
     user_input = input(
         "Enter 'a' to add a movie, 'l' to see your movies, and 'f' to find a movie: ")
@@ -40,4 +41,9 @@ def add_movie():
     title = input("\nTitle of movie you want to add: ")
     director = input("\nDirector of the movie: ")
     release_year = input("\nYear of release: ")
-    movie = dict('Title'=title, 'Director'=director, 'Release Year'=release_year)
+
+    movie = dict(Title=title, Director=director, Release_Year=release_year)
+    movies.append(movie)
+    #print(movies)
+
+
